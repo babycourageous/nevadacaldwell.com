@@ -1,6 +1,6 @@
 var config = {};
 
-config.app    = '/'; // The files Jekyll will work on
+config.app    = ''; // The files Jekyll will work on
 config.dist   = '_site/'; // The resulting static site
 config.assets = '_assets/'; // The files Gulp will work on
 config.nodedir = 'node_modules'; // npm directory for any external linked files
@@ -15,7 +15,8 @@ config.browsersync = {
 
 config.images = {
   src: config.assets + 'images/**/*',
-  jekylldest: config.dist + 'assets/images'
+  jekylldest: config.dist + 'assets/images',
+  appdest: config.app + 'assets/images'
 };
 
 config.svg = {
@@ -42,6 +43,7 @@ config.scripts = {
 config.styles = {
   src: config.assets + 'styles/styles.scss',
   jekylldest: config.dist + 'assets',
+  appdest: config.app + 'assets',
 
   includePaths: [
     config.assets+'styles',
