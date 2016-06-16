@@ -1,0 +1,6 @@
+url: "" # the base hostname & protocol for your site
+baseurl: "/nevadacaldwell.com" # the subpath of your site, e.g. /blog/
+
+title: Nevada Caldwell - Actress, Improviser, Comedienne
+exclude: ["_assets"]
+keep_files: ["assets"]
