@@ -1,0 +1,28 @@
+.header {
+  @extend %container;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__nav {
+    text-align: center;
+  }
+
+  .nav {
+
+    &__item {
+      font-weight: 700;
+      font-family: $heading-font-family;
+      display: inline;
+      width: auto;
+    }
+
+    &__link {
+      display: inline-block;
+      margin: 0 em(5);
+      padding: em(5) em(10);
+
+    }
+  }
+}
