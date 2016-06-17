@@ -3,7 +3,9 @@
  */
 @import 'normalize';
 @import 'bourbon';
+@import 'plugins/base/base';
 @import 'neat';
+
 
 /*
  * 1- UTILS
@@ -19,10 +21,12 @@
 /*
  * 4- LAYOUT
  */
+@import 'layout/header';
 
 /*
  * 5- MODULES
  */
+ @import 'modules/reel';
 
  /*
  * 6- PAGES
