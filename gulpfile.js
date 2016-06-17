@@ -31,6 +31,7 @@ gulp.task('build:scripts', getTask('build:scripts'));
 gulp.task('build:images', getTask('build:images'));
 gulp.task('build:svg', getTask('build:svg'));
 gulp.task('build:jekyll', getTask('build:jekyll'));
+gulp.task('build:jekyll:dev', getTask('build:jekyll:dev'));
 gulp.task('rebuild:jekyll', getTask('rebuild:jekyll'));
 
 /**
@@ -46,6 +47,11 @@ gulp.task('clean:jekyll', getTask('clean:jekyll'));
  * Batch Clean Task
  */
 gulp.task('clean', ['clean:styles', 'clean:images', 'clean:svg', 'clean:scripts', 'clean:jekyll']);
+/**
+ * Batch Assets Build Task
+ */
+gulp.task('build:assets', ['build:images', 'build:scripts', 'build:styles', 'build:svg']);
+
 
 /**
  * Batch Build Task
@@ -55,10 +61,23 @@ gulp.task('clean', ['clean:styles', 'clean:images', 'clean:svg', 'clean:scripts'
  */
 gulp.task('build', function(cb) {
 	plugins.runsequence('clean',
-	    ['build:images', 'build:scripts', 'build:styles', 'build:svg'],
+	    'build:assets',
       'build:jekyll',
       cb);
 });
+/**
+ * Batch Build Task for Local Development Environment
+ * 1. clean out files
+ * 2. build assets in parallel
+ * 3. build jekyll (with development config)
+ */
+gulp.task('build:dev', function(cb) {
+	plugins.runsequence('clean',
+	    'build:assets',
+      'build:jekyll:dev',
+      cb);
+});
+
 /**
  * Wrapper Build:Scripts:Serve Task
  * 1. Build Script Files
@@ -73,7 +92,7 @@ gulp.task('build:scripts:serve', ['build:scripts'], function(cb) {
  * 1. Build Jekyll Files
  * 2. Reload Browser
  */
-gulp.task('build:jekyll:serve', ['build:jekyll'], function(cb) {
+gulp.task('build:jekyll:serve', ['build:jekyll:dev'], function(cb) {
 	plugins.browsersync.reload();
 	cb();
 });
@@ -81,11 +100,11 @@ gulp.task('build:jekyll:serve', ['build:jekyll'], function(cb) {
 /**
  * Batch Serve Task
  */
-gulp.task('serve', ['build'], function() {
+gulp.task('serve', ['build:dev'], function() {
 	// INIT browsersync
 	getTask('browsersync')(gulp, plugins, config);
 	// WATCH config.yml --> build:jekyll:serve
-	gulp.watch(['_config.yml'], ['build:jekyll:serve']);
+	gulp.watch(['_config.yml', 'confiv-dev.yml'], ['build:jekyll:serve']);
 	// WATCH sass|scss --> styles
 	gulp.watch('_assets/styles/**/*.+(sass|scss)', ['build:styles']);
 	// WATCH js --> build:scripts:serve
