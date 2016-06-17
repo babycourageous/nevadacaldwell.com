@@ -7,3 +7,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+section {
+  padding: em(20) 0;
+}
