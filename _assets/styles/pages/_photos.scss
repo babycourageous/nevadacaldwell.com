@@ -1,0 +1,22 @@
+.photos {
+
+  &__container {
+    @extend %container;
+  }
+  &__item {
+    @include media($small-screen) {
+      @include span-columns(6);
+    }
+    @include media($large-screen) {
+      &:nth-child(1n) {
+        @include span-columns(4);
+        @include shift(1);
+      }
+      &:nth-child(2n) {
+        @include span-columns(4);
+        @include shift(2);
+      }
+
+    }
+  }
+}
