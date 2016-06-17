@@ -1,0 +1,10 @@
+<header class="header" role="banner">
+  <h1 class="header__title">{{site.title}}</h1>
+  <nav class="header__nav">
+    <ul class="nav">
+      {% for item in site.data.nav %}
+      <li class="nav__item"><a class="nav__link" href="{{item.url}}">{{item.name}}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
