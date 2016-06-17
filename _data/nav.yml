@@ -1,0 +1,6 @@
+- name: "Bio"
+  url: "#bio"
+- name: "Photos"
+  url: "#photos"
+- name: "Clips"
+  url: "#clips"
