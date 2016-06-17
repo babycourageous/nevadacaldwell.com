@@ -5,10 +5,12 @@
     text-align: center;
     @include span-columns(4);
     @include shift(4);
+    margin-bottom: 0
   }
 
   &__nav {
     text-align: center;
+    clear: both;
   }
 
   .nav {
