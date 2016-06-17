@@ -26,10 +26,12 @@
 /*
  * 5- MODULES
  */
- @import 'modules/reel';
+@import 'modules/vimeo';
 
  /*
  * 6- PAGES
  */
- @import 'pages/bio';
- @import 'pages/photos';
+@import "pages/reel";
+@import 'pages/bio';
+@import 'pages/photos';
+@import 'pages/clips';
