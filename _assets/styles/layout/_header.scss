@@ -14,7 +14,7 @@
 
   &__info {
     text-align: center;
-    font-family: $heading-font-family;
+    font-family: $sans-font-family;
     @include media($bp-header) {
       float: right;
       text-align: right;
@@ -32,7 +32,7 @@
 
     &__item {
       font-weight: 700;
-      font-family: $heading-font-family;
+      font-family: $sans-font-family;
       display: inline;
       width: auto;
     }
