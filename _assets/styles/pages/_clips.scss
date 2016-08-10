@@ -5,7 +5,12 @@
 }
 .clip {
   margin-bottom: em(10);
+  @include media($medium-screen) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
   @include media($large-screen) {
-    @include span-columns(4);
+    @include omega-reset(2n);
+    @include span-columns(3);
   }
 }
