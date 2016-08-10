@@ -8,6 +8,7 @@
   }
 
   &__item {
+    padding-bottom: em(15);
     @include media($medium-screen) {
       @include span-columns(3)
     }
@@ -20,7 +21,7 @@
   }
   &__subitem {
     @include media($medium-screen) {
-      @include span-columns(3 of 6)      
+      @include span-columns(3 of 6)
     }
   }
 
