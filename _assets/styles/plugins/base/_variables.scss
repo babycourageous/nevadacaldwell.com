@@ -5,8 +5,10 @@ $bp-header: 675px;
 $large-screen: 800px;
 
 // Typography
-$base-font-family: 'EB Garamond', serif;
-$heading-font-family: 'Quicksand', sans-serif;
+$sans-font-family: 'Quicksand', sans-serif;
+$serif-font-family: 'EB Garamond', serif;
+$base-font-family: $sans-font-family;
+$heading-font-family: $sans-font-family;
 
 // Font Sizes
 $base-font-size: 1em;
@@ -22,7 +24,7 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #1565c0;
+$blue: #5599dd;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
