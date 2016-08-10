@@ -2,6 +2,7 @@
   @extend %container;
 
   &__blurb {
+    font-family: $heading-font-family;
     text-align: center;
     @include media($medium-screen) {
       @include span-columns(8);
