@@ -4,3 +4,7 @@
   url: "#photos"
 - name: "Clips"
   url: "#clips"
+- name: "Resume"
+  url: "/assets/images/Nevada_Caldwell_Acting_Resume_2016.pdf"
+- name: "Contact"
+  url: "#footer"
