@@ -4,3 +4,15 @@
 	padding-left: em(10);
 	padding-right: em(10);
 }
+
+// ------------------------------------------------------------
+// Omega Reset
+// ------------------------------------------------------------
+@mixin omega-reset($nth) {
+	&:nth-child(#{$nth}) {
+		margin-right: flex-gutter();
+	}
+	&:nth-child(#{$nth}+1) {
+		clear: none 
+	}
+}
