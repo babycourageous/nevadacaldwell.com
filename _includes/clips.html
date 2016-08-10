@@ -1,29 +1,16 @@
 <section id="clips" class="clips">
   <div class="clips__container">
 
-    <div class="clip">
-      <div class="vimeo vimeo--16x9">
-        {% include vimeo.html id=177852230 %}
-      </div>
-    </div>
+    {% for clip in site.data.clips %}
 
     <div class="clip">
       <div class="vimeo vimeo--16x9">
-        {% include vimeo.html id=177853595 %}
+        {% include vimeo.html id=clip.id %}
       </div>
+      <p>{{clip.name}}</p>
     </div>
 
-    <div class="clip">
-      <div class="vimeo vimeo--16x9">
-        {% include vimeo.html id=177863331 %}
-      </div>
-    </div>
-
-    <div class="clip">
-      <div class="vimeo vimeo--16x9">
-        {% include vimeo.html id=177865026 %}
-      </div>
-    </div>
+    {% endfor %}
 
   </div>
 </section>
