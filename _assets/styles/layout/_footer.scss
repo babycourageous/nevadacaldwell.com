@@ -23,6 +23,10 @@
     @include media($medium-screen) {
       @include span-columns(3 of 6)
     }
+
+    &--region {
+      text-decoration: underline;
+    }
   }
 
 
