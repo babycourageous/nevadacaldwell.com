@@ -1,6 +1,7 @@
 <section id="photos" class="photos">
   <div class="photos__container">
-    <img class="photo photos__item" src="{{site.baseurl}}/assets/images/Caldwell_Nevada_Theatrical_xret.jpg">
-    <img class="photo photos__item" src="{{site.baseurl}}/assets/images/Caldwell_Nevada_Commercial_xret.jpg">
+    {% for photo in site.data.photos %}
+    <img class="photo photos__item" src="{{site.baseurl}}/assets/images/{{photo}}">
+    {% endfor %}
   </div>
 </section>
