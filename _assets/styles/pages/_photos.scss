@@ -4,6 +4,9 @@
     @extend %container;
   }
   &__item {
+    padding: 1px;
+    border: 1px solid #333;
+    
     @include media($small-screen) {
       @include span-columns(6);
     }
