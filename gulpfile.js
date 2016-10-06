@@ -104,7 +104,7 @@ gulp.task('serve', ['build:dev'], function() {
 	// INIT browsersync
 	getTask('browsersync')(gulp, plugins, config);
 	// WATCH config.yml --> build:jekyll:serve
-	gulp.watch(['_config.yml', 'confiv-dev.yml'], ['build:jekyll:serve']);
+	gulp.watch(['_config.yml', 'config-dev.yml'], ['build:jekyll:serve']);
 	// WATCH sass|scss --> styles
 	gulp.watch('_assets/styles/**/*.+(sass|scss)', ['build:styles']);
 	// WATCH js --> build:scripts:serve
