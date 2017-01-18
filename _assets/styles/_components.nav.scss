@@ -1,0 +1,16 @@
+.nav {
+
+  &__item {
+    font-weight: 700;
+    font-family: $font__family--sans;
+    display: inline;
+    width: auto;
+  }
+
+  &__link {
+    display: inline-block;
+    margin: 0 em(5);
+    padding: em(5) em(10);
+
+  }
+}

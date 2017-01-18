@@ -1,0 +1,22 @@
+/* ==========================================================================
+   #TYPOGRAPHY
+   ========================================================================== */
+
+/**
+ * Typography variables.
+ *
+ * 1. Set the default serif font family.
+ * 2. Set the default sans-serif font family.
+ * 3. Set an alternate font to use elsewhere on the site. (optional)
+ * 4. Set the base font-size and default line-height.
+ */
+
+// Font Family
+$font__family--sans:  'Quicksand', sans-serif;;
+$font__family--serif: 'EB Garamond', serif;
+
+// Font Size
+$font__size--base:    1em;
+
+// Line height
+$font__line-height:   1.5;

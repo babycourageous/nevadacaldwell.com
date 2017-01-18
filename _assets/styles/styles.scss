@@ -1,38 +1,94 @@
-/*
- * 2- PLUGINS
- */
-@import 'normalize';
-@import 'bourbon';
-@import 'plugins/base/base';
-@import 'neat';
+/* ==========================================================================
+   MAIN IMPORT
+   ========================================================================== */
 
-
-/*
- * 1- UTILS
- */
-@import 'utils/variables';
-@import 'utils/mixins';
-@import 'utils/functions';
-
- /*
- * 3- BASE
+/**
+ * Personal website for Nevada Caldwell
+ *
+ * github.com/babycourageous/nevadacaldwell.com
  */
 
-/*
- * 4- LAYOUT
+/**
+ * This is the main manifest file. Make any additions, extensions, and
+ * modifications here.
  */
- @import 'layout/header';
- @import 'layout/footer';
 
-/*
- * 5- MODULES
- */
-@import 'modules/vimeo';
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Project-wide variables and settings.
+ * Colors...............Project-wide colors.
+ * Typography...........Project-wide fonts.
+ * Transitions..........Project-wide transition settings.
+ * Breakpoints..........Project-wide breakpoint map.
 
- /*
- * 6- PAGES
+ *
+ * TOOLS
+ * Bourbon..............Mixin library.
+ * Breakpoint...........Breakpoint manager plugin.
+ * Modular Scale........Modular Scale calculator plugin.
+ * Typi.................Responsive Typography and Vertical Rhythm plugin.
+ * Hidden...............Mixin for hiding elements.
+ * Mixins...............Project-specific mixins.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field using @necolas’ Normalize.css.
+ * Reset................A tiny reset to complement Normalize.css.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * ELEMENTS
+ * Page.................Set up our document’s default `font-size` and
+ *                      `line-height`.
+ * Typography...........Very minimal (i.e. only font-size information) for
+ *                      headings 1 through 6 and p.
+ * Images...............Base image styles.
+ * Tables...............Simple table styles.
+ * Forms................Simple form styles.
+ *
+ * OBJECTS
+ * Wrapper..............Page constraint object.
+ * List-bare............Lists with no bullets or indents.
+ * List-inline..........A list whose items all site in a line.
+ * Box..................Simple boxing abstraction.
+ * Block................Image-on-top-of-text object.
+ *
+ * COMPONENTS
+ *
+ *
+ * UTILITIES
  */
-@import "pages/reel";
-@import 'pages/bio';
-@import 'pages/photos';
-@import 'pages/clips';
+ // #SETTINGS
+ @import "settings.global";
+ @import "settings.colors";
+ @import "settings.typography";
+ @import "settings.transitions";
+ @import "settings.breakpoints";
+
+ @import "bourbon";
+ //@import 'plugins/base/base';
+ @import "neat";
+ @import "tools.mixins";
+
+ // #GENERIC (and plugins)
+ @import 'normalize';
+ @import "generic.reset";
+ @import "generic.box-sizing";
+ //@import 'breakpoint';
+ //@import 'modular-scale';
+ //@import "typi";
+
+@import "elements.page";
+@import "elements.typography";
+@import "elements.lists";
+@import "elements.images";
+
+@import "objects.wrapper";
+
+@import "components.header";
+@import "components.media-player";
+@import "components.nav";
+@import "components.bio";
+@import "components.photos";
+@import "components.clips";
+@import "components.footer";

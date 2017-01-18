@@ -1,0 +1,53 @@
+$heading-font-family: $font__family--sans;
+$heading-line-height: 1.2;
+// REPLACE THESE
+$base-spacing: 1.5 * 1em;
+$small-spacing: $base-spacing / 2;
+$link-color: $color__primary;
+
+
+body {
+  color: $color__gray--dark;
+  font-family: $font__family--sans;
+  font-size: $font__size--base;
+  line-height: $font__line-height;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+  text-align: center;
+}
+h1 {
+  font-size: modular-scale(3);
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: modular-scale(1);
+}
+p {
+  margin: 0 0 $small-spacing;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color $transition__duration--base $transition__timing--base;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($link-color, 25%);
+  }
+}
