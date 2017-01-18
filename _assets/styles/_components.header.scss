@@ -1,0 +1,32 @@
+.header {
+
+  &__title {
+    margin-bottom: 0;
+
+    @include media($bp-header) {
+      float: left;
+    }
+  }
+
+  &__subtitle {
+    font-size: modular-scale(-3);
+  }
+
+  &__info {
+    text-align: center;
+    font-family: $font__family--sans;
+
+    @include media($bp-header) {
+      float: right;
+      text-align: right;
+      margin-top: 18px;
+    }
+  }
+
+  &__nav {
+    text-align: center;
+    clear: both;
+    margin-bottom: em(20);
+  }
+
+}
