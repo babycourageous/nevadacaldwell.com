@@ -1,4 +1,4 @@
-url: "nevadacaldwell.com" # the base hostname & protocol for your site
+url: "http://nevadacaldwell.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 
 title: Nevada Caldwell
