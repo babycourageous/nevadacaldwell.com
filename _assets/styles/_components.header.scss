@@ -3,6 +3,9 @@
   &__title {
     margin-bottom: 0;
 
+    font-size: ms(3);
+    text-align: center;
+
     @include respond-to(header) {
       float: left;
     }
