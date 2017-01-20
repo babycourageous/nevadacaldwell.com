@@ -7,11 +7,11 @@
 .clip {
   margin-bottom: em(10);
 
-  @include media($large-screen) {
+  @include respond-to(large) {
     lost-column: 4/8 2;
   }
 
-  @include media($xl-screen) {
+  @include respond-to(xl) {
     lost-column: 2/8 4;
   }
 

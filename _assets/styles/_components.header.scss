@@ -3,7 +3,7 @@
   &__title {
     margin-bottom: 0;
 
-    @include media($bp-header) {
+    @include respond-to(header) {
       float: left;
     }
   }
@@ -16,7 +16,7 @@
     font-family: $font__family--sans;
     text-align: center;
 
-    @include media($bp-header) {
+    @include respond-to(header) {
       float: right;
 
       margin-top: 18px;
