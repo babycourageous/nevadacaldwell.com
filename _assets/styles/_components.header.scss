@@ -13,20 +13,24 @@
   }
 
   &__info {
-    text-align: center;
     font-family: $font__family--sans;
+    text-align: center;
 
     @include media($bp-header) {
       float: right;
-      text-align: right;
+
       margin-top: 18px;
+
+      text-align: right;
     }
   }
 
   &__nav {
-    text-align: center;
     clear: both;
+
     margin-bottom: em(20);
+
+    text-align: center;
   }
 
 }
