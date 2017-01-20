@@ -69,6 +69,8 @@
 //@import 'plugins/base/base';
 @import "neat";
 @import 'breakpoint';
+@import 'modular-scale';
+@import "typi";
 @import "tools.mixins";
 
 
@@ -76,16 +78,16 @@
  @import 'normalize';
  @import "generic.reset";
  @import "generic.box-sizing";
- //@import 'modular-scale';
- //@import "typi";
 
 @import "elements.page";
 @import "elements.typography";
 @import "elements.lists";
+@import "elements.links";
 @import "elements.images";
 
 @import "objects.wrapper";
 
+@import "components.title";
 @import "components.header";
 @import "components.media-player";
 @import "components.nav";

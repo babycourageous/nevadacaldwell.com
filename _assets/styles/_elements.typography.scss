@@ -1,18 +1,93 @@
-$heading-font-family: $font__family--sans;
-$heading-line-height: 1.2;
+/* ==========================================================================
+   #TYPOGRAPHY
+   ========================================================================== */
+
+/**
+ * Simple default styles for H1 through H6 and p. Anything more opinionated
+ * than simple font-size changes should likely be applied via classes (see:
+ * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
+ */
+
+/**
+ * We have all of our heading font sizes defined here. Using the TYPI library
+ * will generate a rem-based `font-size` with a pixel fallback, as well as
+ * generate a `line-height` that will sit on our baseline grid.
+ */
+
+// Modular Scale
+$ms-base: 1em;
+$ms-ratio: $fourth;
+
+$heading__font-family: $font__family--sans;
+$heading__font-size:   ms(2);
+$heading__line-height:  1.2;
+
+// use breakpoint
+$typi-breakpoint: breakpoint;
+
 // REPLACE THESE
 $base-spacing: 1.5 * 1em;
 $small-spacing: $base-spacing / 2;
 $link-color: $color__primary;
 
+// TYPI map
+$typi: (
+  base: (
+    null: (16px, 1.5),
+  ),
+  h1: (
+    null: ($heading__font-size, $heading__line-height)
+  ),
+  h2: (
+    null: ($heading__font-size, $heading__line-height)
+  ),
+  h3: (
+    null: ($heading__font-size, $heading__line-height)
+  ),
+  h4: (
+    null: ($heading__font-size, $heading__line-height)
+  ),
+  h5: (
+    null: ($heading__font-size, $heading__line-height)
+  ),
+  h6: (
+    null: ($heading__font-size, $heading__line-height)
+  )
+);
 
-body {
-  color: $color__gray--dark;
-  font-family: $font__family--sans;
-  font-size: $font__size--base;
-  line-height: $font__line-height;
+// Initialize Typi - this will set all the base HTML font sizes
+@include typi-init;
+
+h1 {
+  @include typi('h1');
 }
 
+h2 {
+  @include typi('h2');
+}
+
+h3 {
+  @include typi('h3');
+}
+
+h4 {
+  @include typi('h4');
+}
+
+h5 {
+  @include typi('h5');
+}
+
+h6 {
+  @include typi('h6');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading__font-family;
+  color: $color__gray--dark;
+}
+
+/*
 
 h1,
 h2,
@@ -39,15 +114,4 @@ h6 {
 p {
   margin: 0 0 $small-spacing;
 }
-
-a {
-  color: $link-color;
-  text-decoration: none;
-  transition: color $transition__duration--base $transition__timing--base;
-
-  &:active,
-  &:focus,
-  &:hover {
-    color: shade($link-color, 25%);
-  }
-}
+*/

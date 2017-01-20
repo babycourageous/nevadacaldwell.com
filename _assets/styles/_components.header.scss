@@ -3,6 +3,9 @@
   &__title {
     margin-bottom: 0;
 
+    font-size: ms(3);
+    text-align: center;
+
     @include respond-to(header) {
       float: left;
     }
@@ -27,9 +30,6 @@
 
   &__nav {
     clear: both;
-
-    margin-bottom: em(20);
-
     text-align: center;
   }
 

@@ -1,7 +1,12 @@
 .footer {
   background-color: #333;
   color: #eee;
-  padding: em(25) 0;
+  padding-top: vr(.5);
+  padding-bottom: vr(.5);
+
+  &__heading {
+    color: $color__gray--light;
+  }
 
   &__item {
     padding-bottom: em(15);
@@ -20,6 +25,7 @@
     }*/
   }
   &__subitem {
+    color: $color__gray--light;
     /*@include media($medium-screen) {
       @include span-columns(3 of 6);
     }*/

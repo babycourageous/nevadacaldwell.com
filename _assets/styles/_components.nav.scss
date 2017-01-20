@@ -5,12 +5,18 @@
     font-family: $font__family--sans;
     display: inline;
     width: auto;
+    margin-right: vr(.25);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
   }
 
   &__link {
     display: inline-block;
-    margin: 0 em(5);
-    padding: em(5) em(10);
+
+    padding: vr(.25);
 
   }
 }

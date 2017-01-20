@@ -20,9 +20,13 @@ html {
   font-family: $font__family--sans;
   font-size: $font__size--base; /* [1] */
   line-height: $font__line-height; /* [1] */
-  color: $color__gray;
+  color: $color__gray--dark;
 
   overflow-y: scroll; /* [2] */
+}
+
+body {
+  padding-top: vr(1);
 }
 
 hr {
@@ -34,5 +38,6 @@ hr {
 }
 
 section {
-  padding: em(20) 0;
+  padding-top: vr(1);
+  padding-bottom: vr(1);
 }

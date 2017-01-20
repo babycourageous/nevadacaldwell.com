@@ -1,0 +1,12 @@
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  transition: color $transition__duration--base $transition__timing--base;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($link-color, 25%);
+  }
+}
