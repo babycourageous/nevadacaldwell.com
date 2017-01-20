@@ -13,7 +13,8 @@
     "bourbon-neat": "^1.7.4",
     "breakpoint-sass": "^2.7.1",
     "jquery": "^3.1.1",
-    "normalize.css": "^5.0.0"
+    "normalize.css": "^5.0.0",
+    "typi": "^3.0.0-alpha.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
