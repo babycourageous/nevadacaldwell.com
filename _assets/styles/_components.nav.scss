@@ -1,11 +1,13 @@
 .nav {
 
   &__item {
+    display: inline;
+
+    margin-right: vr(.25);
+    width: auto;
+
     font-weight: 700;
     font-family: $font__family--sans;
-    display: inline;
-    width: auto;
-    margin-right: vr(.25);
 
     &:last-child {
       margin-right: 0;

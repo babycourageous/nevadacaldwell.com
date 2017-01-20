@@ -86,32 +86,3 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $heading__font-family;
   color: $color__gray--dark;
 }
-
-/*
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 400;
-  font-family: $heading-font-family;
-  line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
-  text-align: center;
-}
-h1 {
-  font-size: modular-scale(3);
-}
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: modular-scale(1);
-}
-p {
-  margin: 0 0 $small-spacing;
-}
-*/

@@ -9,15 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^6.3.6",
     "bourbon": "^4.2.7",
-    "bourbon-neat": "^1.7.4",
     "breakpoint-sass": "^2.7.1",
     "jquery": "^3.1.1",
+    "lost": "^8.0.0",
+    "modularscale-sass": "^2.1.1",
     "normalize.css": "^5.0.0",
     "typi": "^3.0.0-alpha.1"
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.6",
     "browser-sync": "^2.12.3",
     "browserify": "^13.0.0",
     "del": "^2.2.0",
@@ -35,8 +36,6 @@
     "gulp-svg-sprite": "^1.2.19",
     "gulp-uglify": "^2.0.0",
     "imagemin-pngquant": "^5.0.0",
-    "lost": "^8.0.0",
-    "modularscale-sass": "^2.1.1",
     "run-sequence": "^1.1.5",
     "uglify": "^0.1.5",
     "vinyl-buffer": "^1.0.0",
