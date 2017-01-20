@@ -2,19 +2,19 @@
 
   &__item {
     padding: 1px;
+    margin-bottom: 10px;
     border: 1px solid #333;
 
-    @include media($small-screen) {
-      @include span-columns(6);
+    @include media($medium-screen) {
+      lost-column: 6/8;
+      lost-offset: 1/8;
     }
+
     @include media($large-screen) {
-      &:nth-child(1n) {
-        @include span-columns(4);
-        @include shift(1);
-      }
+      lost-column: 3/8;
+
       &:nth-child(2n) {
-        @include span-columns(4);
-        @include shift(2);
+        lost-offset: 0/8;
       }
 
     }

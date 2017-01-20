@@ -33,6 +33,7 @@
     "gulp-svg-sprite": "^1.2.19",
     "gulp-uglify": "^2.0.0",
     "imagemin-pngquant": "^5.0.0",
+    "lost": "^8.0.0",
     "run-sequence": "^1.1.5",
     "uglify": "^0.1.5",
     "vinyl-buffer": "^1.0.0",

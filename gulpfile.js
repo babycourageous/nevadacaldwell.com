@@ -7,13 +7,14 @@ var plugins = require('gulp-load-plugins')();
 ********** */
 plugins.autoprefixer = require('autoprefixer');
 plugins.browserify   = require('browserify');
-plugins.buffer       = require('vinyl-buffer');
-plugins.stream       = require('vinyl-source-stream');
 plugins.browsersync  = require('browser-sync').create();
+plugins.buffer       = require('vinyl-buffer');
+plugins.cp           = require('child_process');
 plugins.del          = require('del');
+plugins.lost         = require('lost');
 plugins.pngquant     = require('imagemin-pngquant');
 plugins.runsequence  = require('run-sequence');
-plugins.cp           = require('child_process');
+plugins.stream       = require('vinyl-source-stream');
 
 /* CONFIGURATION
 ********** */
