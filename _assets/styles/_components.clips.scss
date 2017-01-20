@@ -4,15 +4,18 @@
  * is fixed, I have to use an !important flag to reset margin-right on elements
  * that were offset at earlier breakpoints.
  */
-.clip {
-  margin-bottom: em(10);
+.clips {
+  
+  &__clip {
+    margin-bottom: vr(.5);
 
-  @include respond-to(large) {
-    lost-column: 4/8 2;
-  }
+    @include respond-to(large) {
+      lost-column: 4/8 2;
+    }
 
-  @include respond-to(xl) {
-    lost-column: 2/8 4;
+    @include respond-to(xl) {
+      lost-column: 2/8 4;
+    }
   }
 
 }

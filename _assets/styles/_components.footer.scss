@@ -1,7 +1,8 @@
 .footer {
   background-color: #333;
   color: #eee;
-  padding: em(25) 0;
+  padding-top: vr(.5);
+  padding-bottom: vr(.5);
 
   &__item {
     padding-bottom: em(15);
