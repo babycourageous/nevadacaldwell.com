@@ -1,12 +1,13 @@
 {
-  "name": "app",
+  "name": "nevadacaldwell.com",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Personal resume site for Nevada Caldwell.",
+  "main": "index.html",
+  "repository": {
+    "url": "https://github.com/babycourageous/nevadacaldwell.com",
+    "type": "git"
   },
-  "author": "",
+  "author": "Rene Dellefont <renedellefont@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^6.3.6",
