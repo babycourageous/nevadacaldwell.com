@@ -65,16 +65,17 @@
  @import "settings.transitions";
  @import "settings.breakpoints";
 
- @import "bourbon";
- //@import 'plugins/base/base';
- @import "neat";
- @import "tools.mixins";
+@import "bourbon";
+//@import 'plugins/base/base';
+@import "neat";
+@import 'breakpoint';
+@import "tools.mixins";
 
- // #GENERIC (and plugins)
+
+ // #GENERIC
  @import 'normalize';
  @import "generic.reset";
  @import "generic.box-sizing";
- //@import 'breakpoint';
  //@import 'modular-scale';
  //@import "typi";
 

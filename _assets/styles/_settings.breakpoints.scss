@@ -11,8 +11,10 @@
  *   - responsive typography (Typi)
  *
  */
- $small-screen:  450px;
- $medium-screen: 550px;
- $bp-header:     675px;
- $large-screen:  720px;
- $xl-screen:     900px;
+ $breakpoints: (
+  small: 450px,
+  medium: 550px,
+  header: 675px,
+  large: 720px,
+  xl: 900px
+);

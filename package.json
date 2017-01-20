@@ -11,6 +11,7 @@
   "dependencies": {
     "bourbon": "^4.2.7",
     "bourbon-neat": "^1.7.4",
+    "breakpoint-sass": "^2.7.1",
     "jquery": "^3.1.1",
     "normalize.css": "^5.0.0"
   },

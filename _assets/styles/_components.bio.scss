@@ -4,7 +4,7 @@
     font-family: $font__family--sans;
     text-align: center;
 
-    @include media($large-screen) {
+    @include respond-to(large) {
       lost-column: 8/12;
       lost-offset: 2/12;
     }

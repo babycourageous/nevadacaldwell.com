@@ -49,6 +49,7 @@ config.styles = {
     config.assets+'styles',
     config.nodedir+'/normalize.css',
     config.nodedir+'/bourbon/app/assets/stylesheets',
+    config.nodedir+'/breakpoint-sass/stylesheets',
     config.nodedir +'/bourbon-neat/app/assets/stylesheets'
   ],
 
