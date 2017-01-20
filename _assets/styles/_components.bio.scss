@@ -4,14 +4,9 @@
     font-family: $font__family--sans;
     text-align: center;
 
-    @include media($medium-screen) {
-      @include span-columns(8);
-      @include shift(2);
-    }
-    
-    @include media($large-screen) {
-      @include span-columns(6);
-      @include shift(3);
+    @include media($temp-large) {
+      lost-column: 8/12;
+      lost-offset: 2/12;
     }
 
   }

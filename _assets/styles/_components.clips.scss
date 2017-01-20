@@ -1,13 +1,18 @@
+/*
+ * BUGS
+ * 1. Until the behavior noted at https://github.com/peterramsing/lost/issues/294
+ * is fixed, I have to use an !important flag to reset margin-right on elements
+ * that were offset at earlier breakpoints.
+ */
 .clip {
   margin-bottom: em(10);
 
-  @include media($medium-screen) {
-    @include span-columns(6);
-    @include omega(2n);
+  @include media($temp-medium) {
+    lost-column: 4/8 2;
   }
 
-  @include media($large-screen) {
-    @include omega-reset(2n);
-    @include span-columns(3);
+  @include media($xl-screen) {
+    lost-column: 2/8 4;
   }
+  
 }
