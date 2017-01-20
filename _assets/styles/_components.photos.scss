@@ -12,7 +12,7 @@
 
     @include media($large-screen) {
       lost-column: 3/8;
-      
+
       &:nth-child(2n) {
         lost-offset: 0/8;
       }

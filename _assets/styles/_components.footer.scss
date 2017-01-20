@@ -6,10 +6,10 @@
   &__item {
     padding-bottom: em(15);
 
-    @include media($temp-medium) {
+    @include media($medium-screen) {
       lost-column: 1/2;
     }
-    @include media($temp-large) {
+    @include media($large-screen) {
       lost-column: 1/3;
     }
 

@@ -7,12 +7,12 @@
 .clip {
   margin-bottom: em(10);
 
-  @include media($temp-medium) {
+  @include media($large-screen) {
     lost-column: 4/8 2;
   }
 
   @include media($xl-screen) {
     lost-column: 2/8 4;
   }
-  
+
 }
