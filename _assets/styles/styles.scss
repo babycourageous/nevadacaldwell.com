@@ -59,11 +59,11 @@
  * UTILITIES
  */
  // #SETTINGS
- @import "settings.global";
- @import "settings.colors";
- @import "settings.typography";
- @import "settings.transitions";
- @import "settings.breakpoints";
+@import "settings.global";
+@import "settings.colors";
+@import "settings.typography";
+@import "settings.transitions";
+@import "settings.breakpoints";
 
 @import "bourbon";
 //@import 'plugins/base/base';
@@ -73,10 +73,10 @@
 @import "tools.mixins";
 
 
- // #GENERIC
- @import 'normalize';
- @import "generic.reset";
- @import "generic.box-sizing";
+// #GENERIC
+@import 'normalize';
+@import "generic.reset";
+@import "generic.box-sizing";
 
 @import "elements.page";
 @import "elements.typography";
