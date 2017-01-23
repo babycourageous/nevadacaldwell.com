@@ -5,9 +5,9 @@
  * that were offset at earlier breakpoints.
  */
 .clips {
-  
+
   &__clip {
-    margin-bottom: vr(.5);
+    margin-bottom: vr(1);
 
     @include respond-to(large) {
       lost-column: 4/8 2;
