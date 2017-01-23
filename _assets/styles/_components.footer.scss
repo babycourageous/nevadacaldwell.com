@@ -11,12 +11,12 @@
   }
 
   &__item {
-    padding-bottom: em(15);
+    padding-bottom: vr(1);
 
     @include respond-to(medium) {
       lost-column: 1/2;
     }
-    
+
     @include respond-to(large) {
       lost-column: 1/3;
     }

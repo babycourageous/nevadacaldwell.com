@@ -19,21 +19,22 @@ $ms-base: 1em;
 $ms-ratio: $fourth;
 
 $heading__font-family: $font__family--sans;
-$heading__font-size:   ms(2);
+$heading__font-size:   ms(1);
 $heading__line-height:  1.2;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading__font-family;
+  color: $color__gray--dark;
+}
+
 
 // use breakpoint
 $typi-breakpoint: breakpoint;
 
-// REPLACE THESE
-$base-spacing: 1.5 * 1em;
-$small-spacing: $base-spacing / 2;
-$link-color: $color__primary;
-
 // TYPI map
 $typi: (
   base: (
-    null: (16px, 1.5),
+    null: ($font__size--base, $font__line-height),
   ),
   h1: (
     null: ($heading__font-size, $heading__line-height)
@@ -80,9 +81,4 @@ h5 {
 
 h6 {
   @include typi('h6');
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $heading__font-family;
-  color: $color__gray--dark;
 }
