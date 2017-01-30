@@ -5,7 +5,7 @@
   <nav class="header__nav">
     <ul class="nav">
       {% for item in site.data.nav %}
-      <li class="nav__item"><a class="nav__link" href="{% if item.name == 'Resume' %}{{site.baseurl}}/assets/images/{{site.data.settings.resume}}{% endif %}{{item.url}}">{{item.name}}</a></li>
+      <li class="nav__item"><a class="nav__link" href="{% if item.name == 'Resume' %}{{site.baseurl}}/assets/images/{{site.data.settings.resume}}{% endif %}{{item.url}}" data-scroll{% if item.name == 'Resume' %} target="_blank"{% endif %}>{{item.name}}</a></li>
       {% endfor %}
     </ul>
   </nav>
