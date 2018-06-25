@@ -1,12 +1,12 @@
 .photos {
-
   &__container {
+    text-align: center;
     @extend %container;
   }
   &__item {
     padding: 1px;
     border: 1px solid #333;
-    
+
     @include media($small-screen) {
       @include span-columns(6);
     }
@@ -19,7 +19,12 @@
         @include span-columns(4);
         @include shift(2);
       }
-
     }
+  }
+}
+
+.photo__new {
+  @include media($large-screen) {
+    width: 50%;
   }
 }
