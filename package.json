@@ -1,9 +1,11 @@
 {
-  "name": "app",
+  "name": "nevadacaldwell.com",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal actor website for Nevada Caldwell.",
   "main": "index.js",
   "scripts": {
+    "gulp": "gulp",
+    "serve": "gulp serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
