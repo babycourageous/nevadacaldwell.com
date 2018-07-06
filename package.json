@@ -1,6 +1,6 @@
 {
   "name": "nevadacaldwell.com",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Personal actor website for Nevada Caldwell.",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bourbon": "^4.2.7",
-    "bourbon-neat": "^1.7.4",
+    "bourbon": "4.2.7",
+    "bourbon-neat": "1.7.4",
     "normalize.css": "^4.1.1"
   },
   "devDependencies": {

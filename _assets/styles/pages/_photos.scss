@@ -1,7 +1,6 @@
 .photos {
   &__container {
     text-align: center;
-    @extend %container;
   }
   &__item {
     padding: 1px;
@@ -20,11 +19,5 @@
         @include shift(2);
       }
     }
-  }
-}
-
-.photo__new {
-  @include media($large-screen) {
-    width: 50%;
   }
 }
