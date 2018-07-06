@@ -1,13 +1,13 @@
 var config = {};
 
-config.app    = ''; // The files Jekyll will work on
-config.dist   = '_site/'; // The resulting static site
+config.app = ''; // The files Jekyll will work on
+config.dist = '_site/'; // The resulting static site
 config.assets = '_assets/'; // The files Gulp will work on
 config.nodedir = 'node_modules'; // npm directory for any external linked files
 
 config.browsersync = {
   server: {
-      baseDir: config.dist
+    baseDir: config.dist
   },
   // Don't show any notifications in the browser.
   notify: false
@@ -29,15 +29,15 @@ config.svg = {
     },
 
     mode: {
-      inline: true,     // Prepare for inline embedding
-      symbol: true      // Create a «symbol» sprite
+      inline: true, // Prepare for inline embedding
+      symbol: true // Create a «symbol» sprite
     }
   }
 };
 
 config.scripts = {
   src: config.assets + 'scripts/**/*.js',
-  jekylldest: config.dist + 'assets',
+  jekylldest: config.dist + 'assets'
 };
 
 config.styles = {
@@ -46,13 +46,13 @@ config.styles = {
   appdest: config.app + 'assets',
 
   includePaths: [
-    config.assets+'styles',
-    config.nodedir+'/normalize.css',
-    config.nodedir+'/bourbon/app/assets/stylesheets',
-    config.nodedir +'/bourbon-neat/app/assets/stylesheets'
+    config.assets + 'styles',
+    config.nodedir + '/normalize.css',
+    config.nodedir + '/bourbon/app/assets/stylesheets',
+    config.nodedir + '/bourbon-neat/app/assets/stylesheets'
   ],
 
-	autoprefixer: {
+  autoprefixer: {
     browsers: [
       'last 2 versions',
       'safari 5',
@@ -63,7 +63,7 @@ config.styles = {
       'android 4'
     ],
     cascade: true
-  },
+  }
 };
 
 module.exports = config;
