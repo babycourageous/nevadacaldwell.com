@@ -28,7 +28,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "smooth-scroll": "cferdinandi/smooth-scroll"
+  },
   "devDependencies": {
     "autoprefixer": "^9.4.9",
     "browser-sync": "^2.26.3",
