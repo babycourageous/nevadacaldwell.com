@@ -1,12 +1,7 @@
-<header class="header" role="banner">
-  <h1 class="header__title">{{site.title}} <span class="header__subtitle">SAG/AFTRA</span></h1>
-  <p class="header__info">Actor / Improviser / Writer</p>
-
-  <nav class="header__nav">
-    <ul class="nav">
-      {% for item in site.data.nav %}
-      <li class="nav__item"><a class="nav__link" href="{% if item.name == 'Resume' %}{{site.baseurl}}/assets/images/{{site.data.settings.resume}}{% endif %}{{item.url}}">{{item.name}}</a></li>
-      {% endfor %}
-    </ul>
-  </nav>
+<header class="bg-black text-gray-lightest text-center py-2" role="banner">
+  <h1 class="font-heading font-normal text-xl leading-xl md:text-3xl md:leading-2xl">{{site.title}}</h1>
+  <div class="header-meta">
+    <p class="text-sm italic leading-small md:text-base md:leading-normal">Actor - Improviser - Writer</p>
+    <p class="text-sm leading-small md:text-base md:leading-normal md:-mt-1">SAG/AFTRA</p>
+  </div>
 </header>
