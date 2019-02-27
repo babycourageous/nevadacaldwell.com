@@ -93,9 +93,19 @@ h2 {
  * @import "tailwindcss/components";
  */
 @tailwind components;
+
 .vimeo-container {
   @apply .overflow-hidden .relative .pb-vimeo;
 }
+
+@screen md {
+  .clips-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+  }
+}
+
 /**
  * Here you would add any of your custom component classes; stuff that you'd
  * want loaded *before* the utilities so that the utilities could still
