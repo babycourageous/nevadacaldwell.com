@@ -32,6 +32,7 @@
     "smooth-scroll": "cferdinandi/smooth-scroll"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^0.7.1",
     "autoprefixer": "^9.4.9",
     "browser-sync": "^2.26.3",
     "chokidar": "^2.1.2",
