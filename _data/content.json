@@ -1,0 +1,26 @@
+{
+  "resume": "Nevada_Caldwell_Acting_Resume_2016.pdf",
+  "headshot": "Nevada_Caldwell_Headshot_2015.jpg",
+  "clips": [
+    {
+      "name": "Army Wives",
+      "id": 177852230,
+      "thumb": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F585357604_640.webp&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+    },
+    {
+      "name": "Waste-Free Nation",
+      "id": 177853595,
+      "thumb": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F585359633_640.webp&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+    },
+    {
+      "name": "Falcon Man",
+      "id": 177863331,
+      "thumb": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F585368748_640.webp&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+    },
+    {
+      "name": "Subway Makeup",
+      "id": 177865026,
+      "thumb": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F585369538_640.webp&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
+    }
+  ]
+}
