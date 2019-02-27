@@ -1,0 +1,1 @@
+Nevada is an actor – improviser – writer living in NYC. You can see her perform sketch at The PIT and UCB NY. Follow her on <a href='https://www.instagram.com/bklyncowgirl/' target='_blank'>instagram</a> for show updates and for a not at all insane number of photos of her cat, Kevin.

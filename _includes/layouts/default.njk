@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-{%- include head.html -%}
+{%- include "head.njk" -%}
 
 <body class="font-base text-grey-darkest antialiased leading-normal">
-  {{content}}
-
+  {{content | safe }}
 </body>
 <script src="https://player.vimeo.com/api/player.js"></script>
 <script src="assets/bundle.js"></script>
