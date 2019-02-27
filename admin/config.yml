@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+# Media files will be stored in the repo under this filder structure
+media_folder: 'images'
+
+collections:
+  - name: 'settings'
+    label: 'Settings'
+    files:
+      - name: 'site'
+        label: 'Settings'
+        file: '_data/settings.json'
+        fields:
+          - name: 'test'
+            label: 'TEST'
+            widget: 'string'
