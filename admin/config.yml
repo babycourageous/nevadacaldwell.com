@@ -74,17 +74,20 @@ collections:
         name: content
         file: '_data/content.json'
         fields:
-          - name: clips
-            label: Clips
+          - label: Bio
+            name: bio
+            widget: markdown
+          - label: Clips
+            name: clips
             widget: list
             fields:
-              - name: name
-                label: Clip Name
+              - label: Clip Name
+                name: clip-name
                 widget: string
-              - name: id
-                label: Clip ID
+              - label: Clip ID
+                name: clip-id
                 widget: string
-              - name: thumb
-                label: Clip Thumbnail URL
+              - label: Clip Thumbnail URL
+                name: clip-thumb
                 widget: hidden
                 default: ''
