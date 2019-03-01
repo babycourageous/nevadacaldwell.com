@@ -6,13 +6,85 @@ backend:
 media_folder: '_assets/images'
 
 collections:
-  - name: 'settings'
-    label: 'Settings'
+  - label: 'Website Settings'
+    name: 'website-settings'
     files:
-      - name: 'site'
-        label: 'Settings'
-        file: '_data/settings.json'
+      - label: 'SEO Settings'
+        name: 'seo-settings'
+        file: '_data/seo.json'
         fields:
-          - name: 'test'
-            label: 'TEST'
+          - label: 'Title'
+            name: 'title'
             widget: 'string'
+          - label: Tagline
+            name: tagline
+            widget: 'string'
+          - label: Description
+            name: description
+            widget: 'string'
+            pattern: ['^.{120,158}$', 'Must be between 120 and 158 characters.']
+      - label: 'Contact Info'
+        name: 'contact-settings'
+        file: '_data/contact.json'
+        fields:
+          - label: Email
+            name: email
+            widget: string
+          - label: Instagram
+            name: instagram
+            widget: string
+          - label: Facebook
+            name: facebook
+            widget: string
+      - label: 'Footer Info'
+        name: 'footer-settings'
+        file: '_data/footer.json'
+        fields:
+          - label: Representation
+            name: representation
+            widget: list
+            fields:
+              - label: Location
+                name: location
+                widget: string
+              - label: Agency
+                name: agency
+                widget: string
+              - label: Agent
+                name: agent
+                widget: string
+              - label: Phone
+                name: phone
+                widget: string
+          - label: Links
+            name: links
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Link
+                name: link
+                widget: string
+
+  - label: Content
+    name: content
+    files:
+      - label: Site Content
+        name: content
+        file: '_data/content.json'
+        fields:
+          - name: clips
+            label: Clips
+            widget: list
+            fields:
+              - name: name
+                label: Clip Name
+                widget: string
+              - name: id
+                label: Clip ID
+                widget: string
+              - name: thumb
+                label: Clip Thumbnail URL
+                widget: hidden
+                default: ''
