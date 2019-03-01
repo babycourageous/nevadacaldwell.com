@@ -36,6 +36,55 @@ collections:
           - label: Facebook
             name: facebook
             widget: string
+
+  - label: Content
+    name: content
+    files:
+      - label: Bio
+        name: bio
+        file: '_data/bio.json'
+        fields:
+          - label: Bio
+            name: bio
+            widget: markdown
+
+      - label: Uploads
+        name: uploads
+        file: '_data/content.json'
+        fields:
+          - label: Resume
+            name: resume
+            allow_multiple: false
+            widget: file
+
+          - label: Headshot
+            name: headshot
+            allow_multiple: false
+            widget: image
+
+      - label: Videos
+        name: videos
+        file: '_data/videos.json'
+        fields:
+          - label: Reel
+            name: reel
+            hint: 'Enter the Vimeo ID of your reel here.'
+            widget: string
+          - label: Clips
+            name: clips
+            widget: list
+            fields:
+              - label: Clip Name
+                name: clip-name
+                widget: string
+              - label: Clip ID
+                name: clip-id
+                widget: string
+              - label: Clip Thumbnail URL
+                name: clip-thumb
+                widget: hidden
+                default: ''
+
       - label: 'Footer Info'
         name: 'footer-settings'
         file: '_data/footer.json'
@@ -56,38 +105,13 @@ collections:
               - label: Phone
                 name: phone
                 widget: string
-          - label: Links
-            name: links
-            widget: list
-            fields:
-              - label: Title
-                name: title
-                widget: string
-              - label: Link
-                name: link
-                widget: string
-
-  - label: Content
-    name: content
-    files:
-      - label: Site Content
-        name: content
-        file: '_data/content.json'
-        fields:
-          - label: Bio
-            name: bio
-            widget: markdown
-          - label: Clips
-            name: clips
-            widget: list
-            fields:
-              - label: Clip Name
-                name: clip-name
-                widget: string
-              - label: Clip ID
-                name: clip-id
-                widget: string
-              - label: Clip Thumbnail URL
-                name: clip-thumb
-                widget: hidden
-                default: ''
+              - label: Links
+                name: links
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Link
+                    name: link
+                    widget: string

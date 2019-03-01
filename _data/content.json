@@ -1,30 +1,4 @@
 {
-  "bio": "Nevada is an actor – improviser – writer living in NYC. You can see her perform sketch at The PIT and UCB NY. Follow her on [instagram](https://www.instagram.com/bklyncowgirl/) for show updates and for a not at all insane number of photos of her cat, Kevin.",
   "resume": "Nevada_Caldwell_Acting_Resume_2016.pdf",
-  "headshot": "Nevada_Caldwell_Headshot_2015.jpg",
-  "reel": {
-    "id": "177850811"
-  },
-  "clips": [
-    {
-      "clip-name": "Army Wives",
-      "clip-id": 177852230,
-      "clip-thumb": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F585357604_640.webp&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
-    },
-    {
-      "clip-name": "Waste-Free Nation",
-      "clip-id": 177853595,
-      "clip-thumb": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F585359633_640.webp&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
-    },
-    {
-      "clip-name": "Falcon Man",
-      "clip-id": 177863331,
-      "clip-thumb": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F585368748_640.webp&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
-    },
-    {
-      "clip-name": "Subway Makeup",
-      "clip-id": 177865026,
-      "clip-thumb": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F585369538_640.webp&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"
-    }
-  ]
+  "headshot": "Nevada_Caldwell_Headshot_2015.jpg"
 }
