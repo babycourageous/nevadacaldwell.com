@@ -75,13 +75,13 @@ collections:
             widget: list
             fields:
               - label: Clip Name
-                name: clip-name
+                name: clipname
                 widget: string
               - label: Clip ID
-                name: clip-id
+                name: clipid
                 widget: string
               - label: Clip Thumbnail URL
-                name: clip-thumb
+                name: clipthumb
                 widget: hidden
                 default: ''
 
@@ -105,13 +105,13 @@ collections:
               - label: Phone
                 name: phone
                 widget: string
-              - label: Links
-                name: links
-                widget: list
-                fields:
-                  - label: Title
-                    name: title
-                    widget: string
-                  - label: Link
-                    name: link
-                    widget: string
+          - label: Links
+            name: links
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Link
+                name: link
+                widget: string
