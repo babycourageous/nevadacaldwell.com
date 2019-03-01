@@ -1,24 +1,21 @@
 <footer class="bg-black p-4 text-gray-lightest">
   <h2 class="font-normal mb-4 text-xl">Representation</h2>
   <div class="font-serif mb-4">
-    <h3 class="font-normal text-base">NYC (Commercials)</h3>
-    <p class="text-xs mb-4">Don Buchwald & Associates<br>
-      Katherine Ryan<br>
-      212-634-8350</p>
-
-    <h3 class="font-normal text-base">Southeast US (Film/TV)
-      <p class="text-xs">Brevard Talent Group<br>
-        Traci Danielle<br>
-        407-841-7775</p>
-    </h3>
+    {% for rep in footer.representation %}
+    <h3 class="font-normal text-base">{{rep.location}}</h3>
+    <p class="text-xs mb-4">{{rep.agency}}<br>
+      {{rep.agent}}<br>
+      {{rep.phone}}</p>
+    {% endfor %}
   </div>
 
-  <p class="font-serif mb-4"><a href="mailto:nevadacaldwell@gmail.com" class="text-gray-lightest no-underline">nevadacaldwell@gmail.com</a></p>
+  <p class="font-serif mb-4">
+    <a href="mailto:{{contact.email}}" class="text-gray-lightest no-underline">{{contact.email}}</a> | <a href="/assets/pdf/{{content.resume}}" class="text-gray-lightest no-underline">Resumé</a>
+  </p>
 
   <ul class="list-reset font-serif">
-    <li><a href="/assets/pdf/{{content.resume}}" class="text-gray-lightest no-underline">Resumé</a></li>
-    <li><a href="#" class="text-gray-lightest no-underline">IMDB</a></li>
-    <li><a href="#" class="text-gray-lightest no-underline">Actor's Green Room</a></li>
-    <li><a href="#" class="text-gray-lightest no-underline">Actor's Access</a></li>
+    {% for link in footer.links %}
+    <li><a href="{{link.link}}" class="text-gray-lightest no-underline">{{link.title}}</a></li>
+    {% endfor %}
   </ul>
 </footer>
