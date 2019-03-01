@@ -1,0 +1,30 @@
+{
+  "representation": [
+    {
+      "location": "NYC (Commercials)",
+      "agency": "Don Buchwald & Associates",
+      "agent": "Katherine Ryan",
+      "phone": "212-634-8350"
+    },
+    {
+      "location": "Southeast US (Film/TV)",
+      "agency": "Brevard Talent Group",
+      "agent": "Traci Danielle",
+      "phone": "407-841-7775"
+    }
+  ],
+  "links": [
+    {
+      "title": "IMDB",
+      "link": "https://nevadacaldwell.netlify.com/"
+    },
+    {
+      "title": "Actor's Green Room",
+      "link": "https://nevadacaldwell.netlify.com/"
+    },
+    {
+      "title": "Actor's Access",
+      "link": "#"
+    }
+  ]
+}
