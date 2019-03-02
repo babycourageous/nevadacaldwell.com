@@ -7,17 +7,6 @@ media_folder: '_assets/uploads'
 public_folder: 'assets/uploads'
 
 collections:
-  - label: 'TEST'
-    name: 'test'
-    files:
-      - label: 'TEST2'
-        name: 'test2'
-        file: '_includes/headshot.njk'
-        fields:
-          - label: 'Headshot'
-            name: 'headshot'
-            widget: image
-
   - label: 'Website Settings'
     name: 'website-settings'
     files:
