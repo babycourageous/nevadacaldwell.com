@@ -11,11 +11,11 @@ const { join } = require('path')
 /**
  * @description
  * Script for compressing all our static images.
- * Currently, reads images from static/{images_sub_folder}
- * and outputs them into static/compressed/{images_sub_folder}
+ * Currently, reads images from _assets/{images_sub_folder}
+ * and outputs them into _site/assets/{images_sub_folder}
  *
- * ie. static/images  => static/compressed/static/images
- * ie. static/img     => static/compressed/static/img
+ * ie. _assets/images  => _site/assets/images
+ * ie. _assets/img     => _site/assets/img
  */
 
 /**
@@ -27,7 +27,7 @@ const OUTPUT_DIR = '_site/assets'
 /**
  * List of input directories
  */
-const INPUT_DIRS = ['_assets/images']
+const INPUT_DIRS = ['_assets/uploads']
 
 /**
  * Imagemin Options
