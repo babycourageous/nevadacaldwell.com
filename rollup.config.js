@@ -11,9 +11,6 @@ export default {
     file: './_site/javascript/bundle.js',
     format: 'iife',
     name: 'bundle',
-    globals: {
-      lodash: '_',
-    },
   },
   plugins: [
     babel({
