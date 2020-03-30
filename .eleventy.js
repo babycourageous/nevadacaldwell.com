@@ -1,8 +1,15 @@
 const marked = require('marked')
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.setBrowserSyncConfig({
+    files: [
+      '_site/css/**/*',
+      '_site/javascript/**/*'
+    ]
+  });
+  
   // Aliases are in relation to the _includes folder
-  eleventyConfig.addLayoutAlias('default', 'layouts/default.njk')
+  // eleventyConfig.addLayoutAlias('default', 'layouts/default.njk')
 
   eleventyConfig.addFilter('md', function(value) {
     let result
@@ -27,11 +34,13 @@ module.exports = function(eleventyConfig) {
     html: true,
   }
   eleventyConfig.setLibrary('md', markdownIt(options))
+  eleventyConfig.addPassthroughCopy({ "src/_assets/uploads": "assets/uploads" });
 
   return {
     dir: {
-      input: './', // Equivalent to Jekyll's source property
-      output: './_site', // Equivalent to Jekyll's destination property
+      input: 'src',
+      layouts: '_layouts',
+
     },
   }
 }
