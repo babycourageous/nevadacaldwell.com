@@ -1,0 +1,11 @@
+.vimeo-container {
+  @apply .overflow-hidden .relative .pb-vimeo;
+}
+
+@screen md {
+  .clips-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+  }
+}
