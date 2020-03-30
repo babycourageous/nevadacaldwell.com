@@ -1,4 +1,2 @@
-// import './_init'
-// import './_vimeo'
-
-console.log('main')
+import './_init'
+import './_vimeo'
