@@ -1,11 +1,11 @@
-<footer class="bg-black p-4 text-gray-lightest">
+<footer class="bg-gray-900 p-4 text-gray-100">
   <h2 class="font-normal mb-4 text-xl">Representation</h2>
   <div class="font-serif mb-4">
     {% for rep in footer.representation %}
-    <h3 class="font-normal text-base">{{rep.location}}</h3>
-    <p class="text-xs mb-4">{{rep.agency}}<br>
-      {{rep.agent}}<br>
-      {{rep.phone}}</p>
+      <h3 class="font-normal text-base">{{rep.location}}</h3>
+      <p class="text-xs mb-4">{{rep.agency}}<br>
+        {{rep.agent}}<br>
+        {{rep.phone}}</p>
     {% endfor %}
   </div>
 
@@ -15,7 +15,9 @@
 
   <ul class="list-reset font-serif">
     {% for link in footer.links %}
-    <li><a href="{{link.link}}" class="text-gray-lightest no-underline">{{link.title}}</a></li>
+      <li>
+        <a href="{{link.link}}" class="text-gray-lightest no-underline">{{link.title}}</a>
+      </li>
     {% endfor %}
   </ul>
 </footer>
